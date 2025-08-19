@@ -3,49 +3,126 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My GitHub Hosted Site</title>
+    <title>Nish Makeover</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-            margin: 40px;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
         }
         header {
-            background-color: #333;
+            background-color: #222;
             color: white;
-            padding: 1em 0;
-            margin-bottom: 2em;
+            text-align: center;
+            padding: 1.5em 0;
+            font-size: 2.5em;
+            font-weight: bold;
         }
-        h1 {
-            margin: 0;
+        .sub-header {
+            background-color: #ff6f61; /* colored background */
+            color: white;
+            text-align: center;
+            font-size: 1.2em;
+            padding: 0.8em 0;
+            letter-spacing: 2px;
         }
-        main {
+        section.about {
+            max-width: 900px;
+            margin: 2em auto;
+            padding: 1.5em;
             background: white;
-            padding: 2em;
             border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-            max-width: 600px;
-            margin: 0 auto;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        a {
-            color: #007acc;
-            text-decoration: none;
+        section.about h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 0.5em;
         }
-        a:hover {
-            text-decoration: underline;
+        section.about p {
+            line-height: 1.6;
+            color: #555;
+            font-size: 1.1em;
+            text-align: center;
         }
-        footer {
-            margin-top: 2em;
-            font-size: 0.8em;
-            color: #666;
+        section.our-work {
+            max-width: 900px;
+            margin: 2em auto 3em;
+            text-align: center;
+        }
+        section.our-work h2 {
+            color: #333;
+            margin-bottom: 1em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5em;
+        }
+        .gallery-item {
+            width: 180px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            height: 130px;
+            object-fit: cover;
+        }
+        .gallery-item .caption {
+            padding: 0.5em;
+            font-weight: bold;
+            color: #444;
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gallery-item {
+                width: 90%;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My GitHub Site</h1>
-    </header>
-    <main>
-        <p>This is a simple demo website hosted on GitHub Pages.</p>
-        <p>Learn more about <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+    <header>Nish Makeover</header>
+    <div class="sub-header">Academy | Salon</div>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>
+            At Nish Makeover Academy | Salon, we specialize in delivering exceptional beauty services and professional training. Our academy is dedicated to nurturing new talent with hands-on education, while our salon offers a relaxing and rejuvenating experience using the latest techniques and premium products. Whether you're here to learn or to beautify, Nish Makeover is your trusted partner for transformation.
+        </p>
+    </section>
+    <section class="our-work">
+        <h2>Our Work</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/180x130?text=Makeover+1" alt="Makeover 1" />
+                <div class="caption">Our Work 1</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/180x130?text=Makeover+2" alt="Makeover 2" />
+                <div class="caption">Our Work 2</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/180x130?text=Makeover+3" alt="Makeover 3" />
+                <div class="caption">Our Work 3</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/180x130?text=Makeover+4" alt="Makeover 4" />
+                <div class="caption">Our Work 4</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/180x130?text=Makeover+5" alt="Makeover 5" />
+                <div class="caption">Our Work 5</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
